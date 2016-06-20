@@ -75,6 +75,11 @@
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-themes</artifactId>
 		</dependency>
+		<dependency>
+		   <groupId>com.vaadin.addon</groupId>
+		   <artifactId>vaadin-charts</artifactId>
+		   <version>3.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
