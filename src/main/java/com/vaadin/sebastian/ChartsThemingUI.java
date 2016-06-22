@@ -42,16 +42,19 @@ public class ChartsThemingUI extends UI {
         final VerticalLayout layout = new VerticalLayout();
         setContent(layout);
 
+        // We start by creating a new chart..
         Chart chart = new Chart();
         chart.setWidth("640px");
         chart.setHeight("480px");
 
+        // .. and a configuration object for the chart.
         Configuration configuration = chart.getConfiguration();
         configuration.getChart().setType(ChartType.LINE);
         configuration.getTitle().setText("Number of pigs stopped with birds");
         configuration.getxAxis().setCategories("1.1", "1.2", "1.3", "1.4",
                 "2.1", "2.2", "2.3", "2.4", "3.1", "3.2", "3.3", "3.4");
 
+        // We create a gradient color for the background.
         GradientColor color = GradientColor.createLinear(0, 0, 0, 1);
         color.addColorStop(0, new SolidColor("#444444"));
         color.addColorStop(1, new SolidColor("#000000"));
@@ -64,6 +67,8 @@ public class ChartsThemingUI extends UI {
         YAxis yAxis = configuration.getyAxis();
         yAxis.setTitle("Number of pigs");
 
+        // We create a style object that hold the green color we want to use for
+        // all the text in our chart and then we set it to the visible texts
         Style greenTextStyle = new Style();
         greenTextStyle.setColor(new SolidColor("#88b922"));
         xAxis.getLabels().setStyle(greenTextStyle);
@@ -73,10 +78,12 @@ public class ChartsThemingUI extends UI {
         configuration.getTitle().setStyle(greenTextStyle);
         configuration.getLegend().setItemStyle(greenTextStyle);
 
+        // We add a hover style for the legend
         Style itemHoverStyle = new Style();
         itemHoverStyle.setColor(new SolidColor("#f0dc1e"));
         configuration.getLegend().setItemHoverStyle(itemHoverStyle);
 
+        // The two dataseries for the chart
         ListSeries redBirdList = new ListSeries();
         redBirdList.setName("Red bird");
         redBirdList.setData(7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3,
@@ -89,6 +96,7 @@ public class ChartsThemingUI extends UI {
                 10.3, 6.6, 4.8);
         configuration.addSeries(yellowBirdList);
 
+        // The configuration objects for the plots in question.
         PlotOptionsLine redBirdOptions = new PlotOptionsLine();
         redBirdOptions.setColor(new SolidColor("#d62031"));
         redBirdList.setPlotOptions(redBirdOptions);
