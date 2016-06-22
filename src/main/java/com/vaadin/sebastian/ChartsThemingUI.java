@@ -9,6 +9,7 @@ import com.vaadin.addon.charts.model.ListSeries;
 import com.vaadin.addon.charts.model.PlotOptionsLine;
 import com.vaadin.addon.charts.model.XAxis;
 import com.vaadin.addon.charts.model.YAxis;
+import com.vaadin.addon.charts.model.style.GradientColor;
 import com.vaadin.addon.charts.model.style.SolidColor;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -42,11 +43,14 @@ public class ChartsThemingUI extends UI {
 
         Configuration configuration = chart.getConfiguration();
         configuration.getChart().setType(ChartType.LINE);
-
         configuration.getTitle().setText("Number of pigs stopped with birds");
-
         configuration.getxAxis().setCategories("1.1", "1.2", "1.3", "1.4",
                 "2.1", "2.2", "2.3", "2.4", "3.1", "3.2", "3.3", "3.4");
+
+        GradientColor color = GradientColor.createLinear(0, 0, 0, 1);
+        color.addColorStop(0, new SolidColor("#444444"));
+        color.addColorStop(1, new SolidColor("#000000"));
+        configuration.getChart().setBackgroundColor(color);
 
         XAxis xAxis = configuration.getxAxis();
         xAxis.setTitle("Level");
