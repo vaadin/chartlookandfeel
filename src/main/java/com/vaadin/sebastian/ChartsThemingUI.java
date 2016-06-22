@@ -51,6 +51,7 @@ public class ChartsThemingUI extends UI {
         color.addColorStop(0, new SolidColor("#444444"));
         color.addColorStop(1, new SolidColor("#000000"));
         configuration.getChart().setBackgroundColor(color);
+        configuration.getLegend().setBackgroundColor(new SolidColor("#000000"));
 
         XAxis xAxis = configuration.getxAxis();
         xAxis.setTitle("Level");
