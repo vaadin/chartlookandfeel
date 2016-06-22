@@ -6,8 +6,10 @@ import com.vaadin.addon.charts.Chart;
 import com.vaadin.addon.charts.model.ChartType;
 import com.vaadin.addon.charts.model.Configuration;
 import com.vaadin.addon.charts.model.ListSeries;
+import com.vaadin.addon.charts.model.PlotOptionsLine;
 import com.vaadin.addon.charts.model.XAxis;
 import com.vaadin.addon.charts.model.YAxis;
+import com.vaadin.addon.charts.model.style.SolidColor;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
@@ -52,17 +54,25 @@ public class ChartsThemingUI extends UI {
         YAxis yAxis = configuration.getyAxis();
         yAxis.setTitle("Number of pigs");
 
-        ListSeries ls = new ListSeries();
-        ls.setName("Red bird");
-        ls.setData(7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3,
-                13.9, 9.6);
-        configuration.addSeries(ls);
+        ListSeries redBirdList = new ListSeries();
+        redBirdList.setName("Red bird");
+        redBirdList.setData(7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3,
+                18.3, 13.9, 9.6);
+        configuration.addSeries(redBirdList);
 
-        ls = new ListSeries();
-        ls.setName("Yellow bird");
-        ls.setData(3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6,
-                4.8);
-        configuration.addSeries(ls);
+        ListSeries yellowBirdList = new ListSeries();
+        yellowBirdList.setName("Yellow bird");
+        yellowBirdList.setData(3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2,
+                10.3, 6.6, 4.8);
+        configuration.addSeries(yellowBirdList);
+
+        PlotOptionsLine redBirdOptions = new PlotOptionsLine();
+        redBirdOptions.setColor(new SolidColor("#d62031"));
+        redBirdList.setPlotOptions(redBirdOptions);
+
+        PlotOptionsLine yellowBirdOptions = new PlotOptionsLine();
+        yellowBirdOptions.setColor(new SolidColor("#f0dc1e"));
+        yellowBirdList.setPlotOptions(yellowBirdOptions);
 
         chart.drawChart(configuration);
 
