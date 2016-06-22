@@ -11,6 +11,7 @@ import com.vaadin.addon.charts.model.XAxis;
 import com.vaadin.addon.charts.model.YAxis;
 import com.vaadin.addon.charts.model.style.GradientColor;
 import com.vaadin.addon.charts.model.style.SolidColor;
+import com.vaadin.addon.charts.model.style.Style;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
@@ -58,6 +59,19 @@ public class ChartsThemingUI extends UI {
 
         YAxis yAxis = configuration.getyAxis();
         yAxis.setTitle("Number of pigs");
+
+        Style greenTextStyle = new Style();
+        greenTextStyle.setColor(new SolidColor("#88b922"));
+        xAxis.getLabels().setStyle(greenTextStyle);
+        xAxis.getTitle().setStyle(greenTextStyle);
+        yAxis.getLabels().setStyle(greenTextStyle);
+        yAxis.getTitle().setStyle(greenTextStyle);
+        configuration.getTitle().setStyle(greenTextStyle);
+        configuration.getLegend().setItemStyle(greenTextStyle);
+
+        Style itemHoverStyle = new Style();
+        itemHoverStyle.setColor(new SolidColor("#f0dc1e"));
+        configuration.getLegend().setItemHoverStyle(itemHoverStyle);
 
         ListSeries redBirdList = new ListSeries();
         redBirdList.setName("Red bird");
