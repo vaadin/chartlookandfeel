@@ -35,6 +35,10 @@ public class ChartsThemingUI extends UI {
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
+
+        // Uncomment this line to enable a global chart theme for this UI.
+        // ChartOptions.get().setTheme(new ChartTheme());
+
         final VerticalLayout layout = new VerticalLayout();
         setContent(layout);
 
