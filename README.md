@@ -1,8 +1,9 @@
 charts-theming
 ==============
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
-
+Sample for code for article published in Vaadin blog: https://vaadin.com/blog/-/blogs/styling-your-vaadin-charts
+Uses Vaadin Framework 8.0 Beta and Vaadin Charts 4.0 Beta. If you are looking the older Vaadin Charts 3 based code, checkout branch charts3.
+The sample code itself is licensed under Apache 2.0, but Vaadin Charts is licensed under a commercial license. Free trials are available at https://vaadin.com/charts
 
 Workflow
 ========
@@ -11,34 +12,3 @@ To compile the entire project, run "mvn install".
 
 To run the application, run "mvn jetty:run" and open http://localhost:8080/ .
 
-Debugging client side code
-  - run "mvn vaadin:run-codeserver" on a separate console while the application is running
-  - activate Super Dev Mode in the debug window of the application
-
-To produce a deployable production mode WAR:
-- change productionMode to true in the servlet class configuration (nested in the UI class)
-- run "mvn clean package"
-- test the war file with "mvn jetty:run-war"
-
-Developing a theme using the runtime compiler
--------------------------
-
-When developing the theme, Vaadin can be configured to compile the SASS based
-theme at runtime in the server. This way you can just modify the scss files in
-your IDE and reload the browser to see changes.
-
-To use the runtime compilation, open pom.xml and comment out the compile-theme 
-goal from vaadin-maven-plugin configuration. To remove a possibly existing 
-pre-compiled theme, run "mvn clean package" once.
-
-When using the runtime compiler, running the application in the "run" mode 
-(rather than in "debug" mode) can speed up consecutive theme compilations
-significantly.
-
-It is highly recommended to disable runtime compilation for production WAR files.
-
-Using Vaadin pre-releases
--------------------------
-
-If Vaadin pre-releases are not enabled by default, use the Maven parameter
-"-P vaadin-prerelease" or change the activation default value of the profile in pom.xml .

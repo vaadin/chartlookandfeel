@@ -319,8 +319,8 @@
 	font-family: ThemeIcons;
 	font-weight: normal;
 	font-style: normal;
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot);
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../base/fonts/themeicons-webfont.svg#ThemeIcons) format("svg");
+	src: url(../valo/util/bourbon/css3/../../../../valo/fonts/themeicons-webfont/themeicons-webfont.eot);
+	src: url(../valo/util/bourbon/css3/../../../../valo/fonts/themeicons-webfont/themeicons-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../valo/fonts/themeicons-webfont/themeicons-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../valo/fonts/themeicons-webfont/themeicons-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../valo/fonts/themeicons-webfont/themeicons-webfont.svg#ThemeIcons) format("svg");
 }
 
 .ThemeIcons {
@@ -337,8 +337,8 @@
 	font-family: FontAwesome;
 	font-weight: normal;
 	font-style: normal;
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot);
-	src: url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../base/fonts/fontawesome-webfont.svg#FontAwesome) format("svg");
+	src: url(../valo/util/bourbon/css3/../../../../valo/fonts/fontawesome-webfont/fontawesome-webfont.eot);
+	src: url(../valo/util/bourbon/css3/../../../../valo/fonts/fontawesome-webfont/fontawesome-webfont.eot?#iefix) format("embedded-opentype"), url(../valo/util/bourbon/css3/../../../../valo/fonts/fontawesome-webfont/fontawesome-webfont.woff) format("woff"), url(../valo/util/bourbon/css3/../../../../valo/fonts/fontawesome-webfont/fontawesome-webfont.ttf) format("truetype"), url(../valo/util/bourbon/css3/../../../../valo/fonts/fontawesome-webfont/fontawesome-webfont.svg#FontAwesome) format("svg");
 }
 
 .FontAwesome {
@@ -548,34 +548,6 @@
  * @group overlay
  */
 
-.v-shadow, .v-shadow-window {
-	display: none;
-}
-
-.v-ie8 .v-shadow, .v-ie8 .v-shadow-window {
-	display: block;
-}
-
-.v-ie8 .v-shadow .top, .v-ie8 .v-shadow-window .top {
-	position: absolute;
-	top: -6px;
-	right: 10px;
-	bottom: 6px;
-	left: -10px;
-	background: black;
-	filter: alpha(opacity=5) progid:DXImageTransform.Microsoft.blur(pixelradius=10, makeShadow=false);
-}
-
-.v-ie8 .v-shadow .top-left, .v-ie8 .v-shadow-window .top-left {
-	position: absolute;
-	top: -1px;
-	right: -1px;
-	bottom: -1px;
-	left: -1px;
-	background: black;
-	filter: alpha(opacity=9) progid:DXImageTransform.Microsoft.blur(pixelradius=0, makeShadow=false);
-}
-
 /**
  * The backgound color for tooltips.
  *
@@ -632,7 +604,7 @@
  */
 
 /**
- * Outputs the global selectors and properties for the ColorPicker component - styles which are 
+ * Outputs the global selectors and properties for the ColorPicker component - styles which are
  * considered mandatory for the component to work properly.
  *
  * @param {string} $primary-stylename (v-colorpicker) - the primary style name for the selectors
@@ -887,7 +859,7 @@
 
 /**
  * Should the tabsheet content changes be animated.
- * 
+ *
  * @group tabsheet
  */
 
@@ -999,12 +971,10 @@
  */
 
 .v-vaadin-version:after {
-	content: "7.6.6";
+	content: "8.0.0.beta1";
 }
 
 .v-widget {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -1129,8 +1099,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .v-layout.v-vertical > .v-expand, .v-layout.v-horizontal > .v-expand {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
@@ -1468,8 +1436,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .v-tabsheet-tabs {
 	white-space: nowrap;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -1527,8 +1493,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .v-splitpanel-hsplitter div:before, .v-splitpanel-vsplitter div:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	content: "";
 	position: absolute;
@@ -1638,26 +1602,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 90%;
 }
 
-.v-ie8 .chartstheming .v-loading-indicator, .v-ie8 .chartstheming .v-loading-indicator-delay, .v-ie8 .chartstheming .v-loading-indicator-wait, .v-ie9 .chartstheming .v-loading-indicator, .v-ie9 .chartstheming .v-loading-indicator-delay, .v-ie9 .chartstheming .v-loading-indicator-wait {
-	width: 28px !important;
-	height: 28px;
-	padding: 9px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50%;
-	border-radius: 4px;
-	top: 9px;
-	right: 9px;
-	left: auto;
-	filter: alpha(opacity=50);
-}
-
-.v-ie8 .chartstheming .v-loading-indicator[style*="none"], .v-ie8 .chartstheming .v-loading-indicator-delay[style*="none"], .v-ie8 .chartstheming .v-loading-indicator-wait[style*="none"], .v-ie9 .chartstheming .v-loading-indicator[style*="none"], .v-ie9 .chartstheming .v-loading-indicator-delay[style*="none"], .v-ie9 .chartstheming .v-loading-indicator-wait[style*="none"] {
-	display: none !important;
-}
-
-.v-ie8 .chartstheming .v-loading-indicator-wait, .v-ie9 .chartstheming .v-loading-indicator-wait {
-	filter: alpha(opacity=100);
-}
-
 .chartstheming .v-scrollable:focus {
 	outline: none;
 }
@@ -1763,7 +1707,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-tooltip {
-	background-color: #323232;
 	background-color: rgba(50, 50, 50, 0.9);
 	-webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -1901,8 +1844,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-reconnect-dialog .spinner {
 	height: 24px !important;
 	width: 24px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 2px solid rgba(25, 125, 225, 0.2);
 	border-top-color: #197de1;
@@ -1916,18 +1857,6 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: middle;
 }
 
-.v-ie8 .chartstheming .v-reconnect-dialog .spinner, .v-ie9 .chartstheming .v-reconnect-dialog .spinner {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .chartstheming .v-reconnect-dialog .spinner {
-	min-width: 30px;
-	min-height: 30px;
-}
-
 .chartstheming .v-reconnect-dialog.active .spinner {
 	display: inline-block;
 }
@@ -1937,8 +1866,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-absolutelayout-margin, .chartstheming .v-absolutelayout-canvas {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -2181,10 +2108,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-button-primary:active:after {
 	background-color: rgba(2, 62, 122, 0.2);
-}
-
-.v-ie8 .chartstheming .v-button-primary {
-	min-width: 43px;
 }
 
 .chartstheming .v-button-friendly {
@@ -2540,8 +2463,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-checkbox > input ~ label:before, :root .chartstheming .v-checkbox > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 19px;
 	height: 19px;
@@ -2670,8 +2591,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-checkbox-small > input ~ label:before, :root .chartstheming .v-checkbox-small > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 16px;
 	height: 16px;
@@ -2800,8 +2719,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-checkbox-large > input ~ label:before, :root .chartstheming .v-checkbox-large > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 22px;
 	height: 22px;
@@ -2897,8 +2814,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-filterselect [class*="input"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -2929,12 +2844,6 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	padding-right: 38px;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-filterselect [class*="input"], .v-ie9 .chartstheming .v-filterselect [class*="input"] {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-filterselect [class*="input"].v-disabled {
@@ -2990,10 +2899,6 @@ div.v-layout.v-horizontal.v-widget {
 	border-left: 1px solid #e4e4e4;
 	color: #a3a3a3;
 	border-radius: 0 3px 3px 0;
-}
-
-.v-ie8 .chartstheming .v-filterselect [class$="button"] {
-	background-color: white;
 }
 
 .chartstheming .v-filterselect [class$="button"]:before {
@@ -3098,21 +3003,18 @@ div.v-layout.v-horizontal.v-widget {
 	-ms-backface-visibility: hidden;
 	backface-visibility: hidden;
 	padding: 4px 4px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	position: relative;
 	z-index: 1;
-}
-
-.chartstheming .v-filterselect-suggestpopup [class$="suggestmenu"][style*="height"] {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
+	display: block;
 }
 
 .chartstheming .v-filterselect-suggestpopup table, .chartstheming .v-filterselect-suggestpopup tbody, .chartstheming .v-filterselect-suggestpopup tr, .chartstheming .v-filterselect-suggestpopup td {
 	display: block;
+	width: 100%;
+	overflow-y: hidden;
+	float: left;
+	clear: both;
 }
 
 .chartstheming .v-filterselect-suggestpopup .gwt-MenuItem {
@@ -3123,6 +3025,10 @@ div.v-layout.v-horizontal.v-widget {
 	font-weight: 400;
 	white-space: nowrap;
 	position: relative;
+	height: 27px;
+	box-sizing: border-box;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
 }
 
 .chartstheming .v-filterselect-suggestpopup .gwt-MenuItem:active:before {
@@ -3355,8 +3261,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-filterselect-tiny [class*="input"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3384,12 +3288,6 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	padding-right: 29px;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-filterselect-tiny [class*="input"], .v-ie9 .chartstheming .v-filterselect-tiny [class*="input"] {
-	line-height: 28px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-filterselect-tiny .v-icon + [class*="input"] {
@@ -3482,8 +3380,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-filterselect-compact [class*="input"], .chartstheming .v-filterselect-small [class*="input"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3511,12 +3407,6 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	padding-right: 32px;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-filterselect-compact [class*="input"], .v-ie9 .chartstheming .v-filterselect-compact [class*="input"], .v-ie8 .chartstheming .v-filterselect-small [class*="input"], .v-ie9 .chartstheming .v-filterselect-small [class*="input"] {
-	line-height: 31px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-filterselect-compact .v-icon + [class*="input"], .chartstheming .v-filterselect-small .v-icon + [class*="input"] {
@@ -3614,8 +3504,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-filterselect-large [class*="input"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3643,12 +3531,6 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	padding-right: 45px;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-filterselect-large [class*="input"], .v-ie9 .chartstheming .v-filterselect-large [class*="input"] {
-	line-height: 44px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-filterselect-large .v-icon + [class*="input"] {
@@ -3742,8 +3624,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-filterselect-huge [class*="input"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -3771,12 +3651,6 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	padding-right: 60px;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-filterselect-huge [class*="input"], .v-ie9 .chartstheming .v-filterselect-huge [class*="input"] {
-	line-height: 59px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-filterselect-huge .v-icon + [class*="input"] {
@@ -3969,8 +3843,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-form-content {
 	height: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -4104,12 +3976,6 @@ div.v-layout.v-horizontal.v-widget {
 	color: inherit;
 }
 
-.v-ie8 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textfield, .v-ie9 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textfield, .v-ie8 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textarea, .v-ie9 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textarea, .v-ie8 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-filterselect input, .v-ie9 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-filterselect input, .v-ie8 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-datefield input, .v-ie9 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-datefield input, .v-ie8 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-richtextarea, .v-ie9 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-richtextarea {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textfield.v-disabled, .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-textarea.v-disabled, .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-filterselect input.v-disabled, .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-datefield input.v-disabled, .chartstheming .v-formlayout.light  > table > tbody > [class*="row"] > [class*="contentcell"]  > .v-richtextarea.v-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
@@ -4178,8 +4044,6 @@ div.v-layout.v-horizontal.v-widget {
 	position: absolute;
 	z-index: 1;
 	outline: none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -4202,8 +4066,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-grid-tablewrapper {
 	position: absolute;
 	overflow: hidden;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 5;
 }
@@ -4217,8 +4079,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-grid-header-deco, .chartstheming .v-grid-footer-deco {
 	position: absolute;
 	right: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -4227,8 +4087,6 @@ div.v-layout.v-horizontal.v-widget {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -4248,6 +4106,8 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-grid-body {
+	-ms-touch-action: none;
+	touch-action: none;
 	z-index: 0;
 	top: 0;
 }
@@ -4260,12 +4120,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-grid-row {
 	display: block;
-}
-
-.v-ie8 .chartstheming .v-grid-row, .v-ie9 .chartstheming .v-grid-row {
-	float: left;
-	clear: left;
-	margin-top: 0;
 }
 
 .chartstheming .v-grid-row  > td, .chartstheming .v-grid-row  > th {
@@ -4281,8 +4135,6 @@ div.v-layout.v-horizontal.v-widget {
 	float: left;
 	padding: 2px;
 	white-space: nowrap;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	overflow: hidden;
 	font-size: 16px;
@@ -4302,13 +4154,7 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-grid-spacer  > td {
 	width: 100%;
 	height: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-.v-ie8 .chartstheming .v-grid-spacer, .v-ie9 .chartstheming .v-grid-spacer {
-	margin-top: 0;
 }
 
 .chartstheming .v-grid {
@@ -4415,12 +4261,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .v-ie .chartstheming .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button {
 	vertical-align: middle;
-}
-
-.v-ie8 .chartstheming .v-grid-sidebar.v-contextmenu.open .v-grid-sidebar-button:after {
-	vertical-align: middle;
-	text-align: center;
-	display: inline;
 }
 
 .chartstheming .v-grid-sidebar.v-contextmenu .v-grid-sidebar-content {
@@ -4533,6 +4373,21 @@ div.v-layout.v-horizontal.v-widget {
 	user-select: none;
 }
 
+.chartstheming .v-grid-column-resize-simple-indicator {
+	position: absolute;
+	width: 3px;
+	top: 0px;
+	left: 18px;
+	z-index: 9001;
+	background: #fff;
+	box-shadow: 0px 0px 5px #000;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .chartstheming .v-grid-footer td {
 	background-color: #fafafa;
 	font-size: 14px;
@@ -4593,10 +4448,6 @@ div.v-layout.v-horizontal.v-widget {
 	pointer-events: none;
 }
 
-.ie8 .chartstheming .v-grid-cell-focused:before, .ie9 .chartstheming .v-grid-cell-focused:before, .ie10 .chartstheming .v-grid-cell-focused:before {
-	content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==);
-}
-
 .chartstheming .v-grid:focus .v-grid-cell-focused:before {
 	display: block;
 }
@@ -4634,8 +4485,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-grid-editor-cells  > div {
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	vertical-align: middle;
 	background: white;
@@ -4671,14 +4520,6 @@ div.v-layout.v-horizontal.v-widget {
 	max-width: 100%;
 	min-height: 100%;
 	max-height: 100%;
-}
-
-.v-ie8 .chartstheming .v-grid-editor-cells  > div .v-datefield-button {
-	margin-left: -37px;
-}
-
-.v-ie8 .chartstheming .v-grid-editor-cells  > div .v-filterselect-button {
-	margin-left: -25px;
 }
 
 .chartstheming .v-grid-editor-cells  > div .v-select, .chartstheming .v-grid-editor-cells  > div .v-select-select {
@@ -4782,10 +4623,6 @@ div.v-layout.v-horizontal.v-widget {
 	position: absolute;
 	height: 100%;
 	pointer-events: none;
-}
-
-.ie8 .chartstheming .v-grid-spacer-deco:before, .ie9 .chartstheming .v-grid-spacer-deco:before, .ie10 .chartstheming .v-grid-spacer-deco:before {
-	content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==);
 }
 
 .chartstheming .v-grid-cell > .v-progressbar {
@@ -4913,14 +4750,6 @@ div.v-layout.v-horizontal.v-widget {
 	padding-left: 44.4px;
 }
 
-.v-ie8 .chartstheming .v-grid-editor-cells > div .v-datefield-button {
-	margin-left: 0px;
-}
-
-.v-ie8 .chartstheming .v-grid-editor-cells > div .v-filterselect-button {
-	margin-left: 0px;
-}
-
 .chartstheming .v-grid-editor-cells > div .v-textfield-focus, .chartstheming .v-grid-editor-cells > div .v-datefield .v-textfield-focus, .chartstheming .v-grid-editor-cells > div .v-filterselect-input:focus {
 	position: relative;
 }
@@ -5043,12 +4872,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 185px;
 }
 
-.v-ie8 .chartstheming .v-textfield, .v-ie9 .chartstheming .v-textfield {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .chartstheming .v-textfield.v-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
@@ -5134,12 +4957,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 12px;
 }
 
-.v-ie8 .chartstheming .v-textfield-tiny, .v-ie9 .chartstheming .v-textfield-tiny {
-	line-height: 28px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .chartstheming .v-textfield-compact, .chartstheming .v-textfield-small {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -5163,12 +4980,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-transition: box-shadow 180ms, border 180ms;
 	-moz-transition: box-shadow 180ms, border 180ms;
 	transition: box-shadow 180ms, border 180ms;
-}
-
-.v-ie8 .chartstheming .v-textfield-compact, .v-ie9 .chartstheming .v-textfield-compact, .v-ie8 .chartstheming .v-textfield-small, .v-ie9 .chartstheming .v-textfield-small {
-	line-height: 31px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-textfield-small {
@@ -5201,12 +5012,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 20px;
 }
 
-.v-ie8 .chartstheming .v-textfield-large, .v-ie9 .chartstheming .v-textfield-large {
-	line-height: 44px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .chartstheming .v-textfield-huge {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -5231,12 +5036,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: box-shadow 180ms, border 180ms;
 	transition: box-shadow 180ms, border 180ms;
 	font-size: 26px;
-}
-
-.v-ie8 .chartstheming .v-textfield-huge, .v-ie9 .chartstheming .v-textfield-huge {
-	line-height: 59px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-slot-inline-icon {
@@ -5513,12 +5312,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 185px;
 }
 
-.v-ie8 .chartstheming .v-textarea, .v-ie9 .chartstheming .v-textarea {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .chartstheming .v-textarea.v-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
@@ -5538,12 +5331,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-textarea[class*="prompt"] {
 	color: #a3a3a3;
-}
-
-.v-ie8 .chartstheming .v-textarea, .v-ie9 .chartstheming .v-textarea {
-	line-height: inherit;
-	padding-top: 4px;
-	padding-bottom: 4px;
 }
 
 .chartstheming .v-textarea-readonly {
@@ -5614,18 +5401,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 12px;
 }
 
-.v-ie8 .chartstheming .v-textarea-tiny, .v-ie9 .chartstheming .v-textarea-tiny {
-	line-height: 28px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.v-ie8 .chartstheming .v-textarea-tiny, .v-ie9 .chartstheming .v-textarea-tiny {
-	line-height: inherit;
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-
 .chartstheming .v-textarea-small {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -5654,18 +5429,6 @@ div.v-layout.v-horizontal.v-widget {
 	resize: none;
 	white-space: pre-wrap;
 	font-size: 14px;
-}
-
-.v-ie8 .chartstheming .v-textarea-small, .v-ie9 .chartstheming .v-textarea-small {
-	line-height: 31px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.v-ie8 .chartstheming .v-textarea-small, .v-ie9 .chartstheming .v-textarea-small {
-	line-height: inherit;
-	padding-top: 3px;
-	padding-bottom: 3px;
 }
 
 .chartstheming .v-textarea-large {
@@ -5698,18 +5461,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 20px;
 }
 
-.v-ie8 .chartstheming .v-textarea-large, .v-ie9 .chartstheming .v-textarea-large {
-	line-height: 44px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.v-ie8 .chartstheming .v-textarea-large, .v-ie9 .chartstheming .v-textarea-large {
-	line-height: inherit;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
 .chartstheming .v-textarea-huge {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -5740,18 +5491,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-size: 26px;
 }
 
-.v-ie8 .chartstheming .v-textarea-huge, .v-ie9 .chartstheming .v-textarea-huge {
-	line-height: 59px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.v-ie8 .chartstheming .v-textarea-huge, .v-ie9 .chartstheming .v-textarea-huge {
-	line-height: inherit;
-	padding-top: 7px;
-	padding-bottom: 7px;
-}
-
 .chartstheming .v-textarea-align-right {
 	text-align: right;
 }
@@ -5768,8 +5507,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield [class*="textfield"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -5800,12 +5537,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-datefield [class*="textfield"], .v-ie9 .chartstheming .v-datefield [class*="textfield"] {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-datefield [class*="textfield"].v-disabled {
@@ -5992,8 +5723,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-popup .v-datefield-calendarpanel-day {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 30px;
 	height: 26px;
@@ -6007,8 +5736,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: color 200ms;
 	transition: color 200ms;
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -6041,10 +5768,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	position: relative;
-}
-
-.v-ie8 .chartstheming .v-datefield-popup .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-focused {
-	border-color: #197de1;
 }
 
 .chartstheming .v-datefield-popup .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-outside-range, .chartstheming .v-datefield-popup .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-outside-range:hover {
@@ -6185,8 +5908,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-calendarpanel-day {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 30px;
 	height: 26px;
@@ -6200,8 +5921,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: color 200ms;
 	transition: color 200ms;
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -6234,10 +5953,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	position: relative;
-}
-
-.v-ie8 .chartstheming .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-focused {
-	border-color: #197de1;
 }
 
 .chartstheming .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-outside-range, .chartstheming .v-datefield-calendarpanel-day.v-datefield-calendarpanel-day-outside-range:hover {
@@ -6410,8 +6125,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-tiny [class*="textfield"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -6440,12 +6153,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-datefield-tiny [class*="textfield"], .v-ie9 .chartstheming .v-datefield-tiny [class*="textfield"] {
-	line-height: 28px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-datefield-tiny [class*="button"] {
@@ -6525,8 +6232,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-compact [class*="textfield"], .chartstheming .v-datefield-small [class*="textfield"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -6555,12 +6260,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-datefield-compact [class*="textfield"], .v-ie9 .chartstheming .v-datefield-compact [class*="textfield"], .v-ie8 .chartstheming .v-datefield-small [class*="textfield"], .v-ie9 .chartstheming .v-datefield-small [class*="textfield"] {
-	line-height: 31px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-datefield-compact [class*="button"], .chartstheming .v-datefield-small [class*="button"] {
@@ -6645,8 +6344,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-large [class*="textfield"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -6675,12 +6372,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-datefield-large [class*="textfield"], .v-ie9 .chartstheming .v-datefield-large [class*="textfield"] {
-	line-height: 44px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-datefield-large [class*="button"] {
@@ -6761,8 +6452,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-datefield-huge [class*="textfield"] {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -6791,12 +6480,6 @@ div.v-layout.v-horizontal.v-widget {
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
-}
-
-.v-ie8 .chartstheming .v-datefield-huge [class*="textfield"], .v-ie9 .chartstheming .v-datefield-huge [class*="textfield"] {
-	line-height: 59px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-datefield-huge [class*="button"] {
@@ -6880,8 +6563,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-inline-datefield-calendarpanel-day {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 30px;
 	height: 26px;
@@ -6895,8 +6576,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: color 200ms;
 	transition: color 200ms;
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;
 }
@@ -6929,10 +6608,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	position: relative;
-}
-
-.v-ie8 .chartstheming .v-inline-datefield-calendarpanel-day.v-inline-datefield-calendarpanel-day-focused {
-	border-color: #197de1;
 }
 
 .chartstheming .v-inline-datefield-calendarpanel-day.v-inline-datefield-calendarpanel-day-outside-range, .chartstheming .v-inline-datefield-calendarpanel-day.v-inline-datefield-calendarpanel-day-outside-range:hover {
@@ -7177,8 +6852,6 @@ div.v-layout.v-horizontal.v-widget {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 37px;
 	padding: 0 15px;
@@ -7567,8 +7240,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-radiobutton > input ~ label:before, :root .chartstheming .v-radiobutton > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 19px;
 	height: 19px;
@@ -7730,8 +7401,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-select-optiongroup-small .v-checkbox > input ~ label:before, :root .chartstheming .v-select-optiongroup-small .v-checkbox > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 16px;
 	height: 16px;
@@ -7859,8 +7528,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-select-optiongroup-small .v-radiobutton > input ~ label:before, :root .chartstheming .v-select-optiongroup-small .v-radiobutton > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 16px;
 	height: 16px;
@@ -8022,8 +7689,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-select-optiongroup-large .v-checkbox > input ~ label:before, :root .chartstheming .v-select-optiongroup-large .v-checkbox > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 22px;
 	height: 22px;
@@ -8151,8 +7816,6 @@ div.v-layout.v-horizontal.v-widget {
 :root .chartstheming .v-select-optiongroup-large .v-radiobutton > input ~ label:before, :root .chartstheming .v-select-optiongroup-large .v-radiobutton > input ~ label:after {
 	content: "";
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 22px;
 	height: 22px;
@@ -8446,8 +8109,6 @@ div.v-layout.v-horizontal.v-widget {
 	z-index: 3;
 	top: 0;
 	right: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 33px;
 	height: 36px;
@@ -8518,8 +8179,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-window-contents {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin-top: 0 !important;
@@ -8606,15 +8265,6 @@ div.v-layout.v-horizontal.v-widget {
 	cursor: nwse-resize;
 }
 
-.v-ie8 .chartstheming .v-window-resizebox {
-	background: #000;
-	filter: alpha(opacity=0.1);
-}
-
-.v-ie8 .chartstheming .v-window-resizebox, .v-ie9 .chartstheming .v-window-resizebox {
-	cursor: se-resize;
-}
-
 .chartstheming .v-window-modalitycurtain:active  ~ .v-window {
 	-webkit-animation: none;
 	-moz-animation: none;
@@ -8662,8 +8312,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-margin-left.v-margin-right.v-margin-top .v-window-top-toolbar.v-layout {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	margin: -12px -12px 0;
 }
@@ -8678,8 +8326,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-margin-left.v-margin-right.v-margin-bottom .v-window-bottom-toolbar.v-layout {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	margin: 0 -12px -12px;
 }
@@ -8703,20 +8349,6 @@ div.v-layout.v-horizontal.v-widget {
 	cursor: pointer;
 	background: red;
 	opacity: 0;
-}
-
-.v-ie8 .chartstheming .v-tree-node:before {
-	position: static;
-	margin-left: -1.9em;
-	vertical-align: top;
-	content: "\f0da";
-	font-family: ThemeIcons;
-	text-align: center;
-	background: transparent;
-}
-
-.v-ie8 .chartstheming .v-tree-node {
-	padding-left: 1.9em;
 }
 
 .chartstheming .v-tree-node-caption {
@@ -8744,10 +8376,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-transition: all 100ms;
 	-moz-transition: all 100ms;
 	transition: all 100ms;
-}
-
-.v-ie8 .chartstheming .v-tree-node-caption > div:before {
-	display: none;
 }
 
 .chartstheming .v-tree-node-caption span {
@@ -8784,14 +8412,6 @@ div.v-layout.v-horizontal.v-widget {
 	transition: opacity 120ms;
 }
 
-.v-ie8 .chartstheming .v-tree-node-caption:after {
-	content: none;
-}
-
-.v-ie8 .chartstheming .v-tree-node-caption {
-	display: inline-block;
-}
-
 .chartstheming .v-tree-node-expanded > .v-tree-node-caption > div:before {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -8802,11 +8422,6 @@ div.v-layout.v-horizontal.v-widget {
 	font-family: ThemeIcons;
 }
 
-.v-ie8 .chartstheming .v-tree-node-expanded:before {
-	content: "\f0d7";
-	font-family: ThemeIcons;
-}
-
 .chartstheming .v-tree-node-leaf:before, .chartstheming .v-tree-node-leaf > .v-tree-node-caption > div:before {
 	visibility: hidden;
 }
@@ -8814,10 +8429,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-tree-node-focused:after {
 	opacity: 1;
 	border: 1px solid #197de1;
-}
-
-.v-ie8 .chartstheming .v-tree-node-focused {
-	outline: 1px dotted #197de1;
 }
 
 .chartstheming .v-tree-node-selected {
@@ -8833,18 +8444,8 @@ div.v-layout.v-horizontal.v-widget {
 	border: none;
 }
 
-.v-ie8 .chartstheming .v-tree-node-selected {
-	background-color: #197de1;
-	background-image: -webkit-linear-gradient(top, #1b87e3 2%, #166ed5 98%);
-	background-image: linear-gradient(to bottom,#1b87e3 2%, #166ed5 98%);
-}
-
 .chartstheming .v-tree-node-children {
 	padding-left: 19px;
-}
-
-.v-ie8 .chartstheming .v-tree-node-children {
-	padding-left: 0;
 }
 
 .chartstheming .v-tree-node-drag-top:before, .chartstheming .v-tree-node-drag-bottom:after, .chartstheming .v-tree-node-drag-bottom.v-tree-node-dragfolder.v-tree-node-expanded > .v-tree-node-children:before {
@@ -8874,16 +8475,8 @@ div.v-layout.v-horizontal.v-widget {
 	border-radius: 4px;
 }
 
-.v-ie8 .chartstheming .v-tree-node-caption-drag-center {
-	outline: 2px solid #197de1;
-}
-
 .v-ff .chartstheming .v-tree-node-drag-top:before, .v-ff .chartstheming .v-tree-node-drag-bottom:after {
 	line-height: 1px;
-}
-
-.v-ie8 .chartstheming .v-tree-node-drag-top:before, .v-ie8 .chartstheming .v-tree-node-drag-bottom:after {
-	line-height: 0;
 }
 
 .chartstheming .v-table {
@@ -8896,10 +8489,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-table-header table, .chartstheming .v-table-footer table, .chartstheming .v-table-table {
 	-webkit-box-shadow: 0 0 0 1px #d4d4d4;
 	box-shadow: 0 0 0 1px #d4d4d4;
-}
-
-.v-ie8 .chartstheming .v-table-header table, .v-ie8 .chartstheming .v-table-footer table, .v-ie8 .chartstheming .v-table-table {
-	outline: 1px solid #d4d4d4;
 }
 
 .chartstheming .v-table-header-wrap, .chartstheming .v-table-footer-wrap, .chartstheming .v-table-header-drag {
@@ -8929,13 +8518,7 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: hidden;
 	line-height: 1;
 	min-height: 37px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-.v-ie8 .chartstheming .v-table-footer-container, .v-ie8 .chartstheming .v-table-caption-container {
-	min-height: 14px;
 }
 
 .chartstheming .v-table-footer-container {
@@ -8986,8 +8569,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-table-cell-wrapper {
 	line-height: 1;
 	padding: 0 12px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-right: 0 !important;
 }
@@ -9224,6 +8805,11 @@ div.v-layout.v-horizontal.v-widget {
 	display: inline;
 }
 
+.chartstheming .v-on.v-disabled, .chartstheming .v-off.v-disabled {
+	opacity: 0.5;
+	filter: alpha(opacity=50) ;
+}
+
 .chartstheming .v-off:before {
 	visibility: hidden;
 }
@@ -9273,10 +8859,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-table-drag .v-table-body {
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
-	border-color: #197de1;
-}
-
-.v-ie8 .chartstheming .v-table-drag .v-table-body {
 	border-color: #197de1;
 }
 
@@ -9432,8 +9014,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-treetable [class*="caption-container"], .chartstheming .v-treetable [class*="footer-container"], .chartstheming .v-treetable [class*="cell-wrapper"] {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	padding-left: 0;
 	padding-right: 0;
@@ -9747,8 +9327,6 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #d4d4d4;
 	background-image: -webkit-linear-gradient(bottom, #d7d7d7 2%, #c7c7c7 98%);
 	background-image: linear-gradient(to top,#d7d7d7 2%, #c7c7c7 98%);
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	min-width: 74px;
 }
@@ -9762,8 +9340,6 @@ div.v-layout.v-horizontal.v-widget {
 	
 	
 	border: 1px solid #1362b1;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 100%;
 	min-width: 8px;
@@ -9792,8 +9368,6 @@ div.v-layout.v-horizontal.v-widget {
 	
 	
 	border: 1px solid #1362b1;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 100%;
 	width: 9px;
@@ -9803,8 +9377,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-progressbar-indeterminate {
 	height: 24px !important;
 	width: 24px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 2px solid rgba(25, 125, 225, 0.2);
 	border-top-color: #197de1;
@@ -9814,18 +9386,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-animation: v-rotate-360 500ms infinite linear;
 	animation: v-rotate-360 500ms infinite linear;
 	pointer-events: none;
-}
-
-.v-ie8 .chartstheming .v-progressbar-indeterminate, .v-ie9 .chartstheming .v-progressbar-indeterminate {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .chartstheming .v-progressbar-indeterminate {
-	min-width: 30px;
-	min-height: 30px;
 }
 
 .chartstheming .v-progressbar-indeterminate .v-progressbar-wrapper {
@@ -9844,10 +9404,6 @@ div.v-layout.v-horizontal.v-widget {
 	opacity: 1;
 }
 
-.v-ie8 .chartstheming .v-slider:focus .v-slider-handle:after {
-	visibility: visible;
-}
-
 .chartstheming .v-slider.v-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
@@ -9859,8 +9415,6 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #d4d4d4;
 	background-image: -webkit-linear-gradient(bottom, #d7d7d7 2%, #c7c7c7 98%);
 	background-image: linear-gradient(to top,#d7d7d7 2%, #c7c7c7 98%);
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	min-width: 74px;
 	height: 6px;
@@ -9890,8 +9444,6 @@ div.v-layout.v-horizontal.v-widget {
 	
 	
 	border: 1px solid #1362b1;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 100%;
 	content: "";
@@ -9899,11 +9451,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin-left: -100%;
 	width: 100%;
 	vertical-align: top;
-}
-
-.v-ie8 .chartstheming .v-slider-base:after {
-	position: relative;
-	left: -11px;
 }
 
 .chartstheming .v-has-width > .v-slider-base {
@@ -9969,14 +9516,8 @@ div.v-layout.v-horizontal.v-widget {
 	transition: opacity 200ms;
 }
 
-.v-ie8 .chartstheming .v-slider-handle:after {
-	visibility: hidden;
-}
-
 .chartstheming .v-slider-handle:before, .chartstheming .v-slider-handle:after {
 	content: "";
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 	width: 22px;
@@ -9989,7 +9530,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-slider-feedback {
-	background-color: #323232;
 	background-color: rgba(50, 50, 50, 0.9);
 	-webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -10035,12 +9575,6 @@ div.v-layout.v-horizontal.v-widget {
 	background-image: linear-gradient(to right,#1b87e3 2%, #166ed5 98%);
 }
 
-.v-ie8 .chartstheming .v-slider-vertical .v-slider-base:after {
-	top: 11px;
-	left: 0;
-	height: 130%;
-}
-
 .chartstheming .v-slider-vertical .v-slider-handle {
 	width: 0;
 	height: 0.1px;
@@ -10069,8 +9603,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-tabsheet-tabcontainer {
 	position: relative;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -10100,8 +9632,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-tabsheet-tabitemcell .v-caption {
 	margin-left: 19px;
 	padding: 0 4px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;
 	text-align: center;
@@ -10211,14 +9741,6 @@ div.v-layout.v-horizontal.v-widget {
 	background-image: linear-gradient(to left,#dfdfdf 70%, rgba(223, 223, 223, 0) 100%);
 }
 
-.v-ie8 .chartstheming .v-tabsheet-scroller, .v-ie9 .chartstheming .v-tabsheet-scroller {
-	background-color: #fafafa;
-}
-
-.v-ie8 .chartstheming .v-tabsheet-scroller:after, .v-ie9 .chartstheming .v-tabsheet-scroller:after {
-	background-color: #dfdfdf;
-}
-
 .chartstheming .v-tabsheet-scroller button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -10290,8 +9812,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-tabsheet-deco {
 	height: 20px !important;
 	width: 20px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 2px solid rgba(25, 125, 225, 0.2);
 	border-top-color: #197de1;
@@ -10308,18 +9828,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin-bottom: -29px;
 	left: 50%;
 	margin-left: -10px;
-}
-
-.v-ie8 .chartstheming .v-tabsheet-deco, .v-ie9 .chartstheming .v-tabsheet-deco {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .chartstheming .v-tabsheet-deco {
-	min-width: 30px;
-	min-height: 30px;
 }
 
 .chartstheming .v-tabsheet-loading .v-tabsheet-deco {
@@ -10582,23 +10090,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin-left: 19px;
 }
 
-.v-ie8 .chartstheming .v-colorpicker-button-color {
-	position: relative;
-	top: auto;
-	right: auto;
-	bottom: auto;
-	left: auto;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 -8px;
-}
-
-.v-ie8 .chartstheming .v-colorpicker-button-color  + .v-button-caption {
-	margin-left: 19px;
-}
-
 .chartstheming .v-panel {
 	background: white;
 	color: #474747;
@@ -10610,8 +10101,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-panel-caption {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 12px;
 	line-height: 36px;
@@ -10629,8 +10118,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-panel-content {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
@@ -10775,8 +10262,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-accordion-item-caption  > .v-caption {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 12px;
 	line-height: 36px;
@@ -10821,8 +10306,6 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.05);
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.05);
 	background-color: white;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -10896,8 +10379,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-select-twincol-buttons .v-button {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -10941,6 +10422,12 @@ div.v-layout.v-horizontal.v-widget {
 	content: "\f054";
 }
 
+.chartstheming .v-select-twincol-error .v-select-twincol-options, .chartstheming .v-select-twincol-error .v-select-twincol-selections {
+	border-color: #ed473b !important;
+	background: #fffbfb;
+	color: #6c2621;
+}
+
 .chartstheming .v-select select {
 	border: 1px solid #c5c5c5;
 	background-color: #fafafa;
@@ -10967,6 +10454,12 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-select-select  + .v-textfield  + .v-nativebutton {
 	margin-top: 9px;
 	margin-left: 9px;
+}
+
+.chartstheming .v-select-error .v-select-select {
+	border-color: #ed473b !important;
+	background: #fffbfb;
+	color: #6c2621;
 }
 
 .chartstheming .v-calendar-header-day {
@@ -11041,8 +10534,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-calendar-month-day {
 	outline: none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	line-height: 1.2;
 }
@@ -11213,8 +10704,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-calendar-event-month {
 	padding: 0 5px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin-bottom: 3px;
 	white-space: nowrap;
@@ -11238,8 +10727,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .chartstheming .v-calendar-event-all-day {
 	padding: 0 5px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 19px;
 	line-height: 19px;
@@ -11409,6 +10896,11 @@ div.v-layout.v-horizontal.v-widget {
 	user-select: text;
 }
 
+.chartstheming .v-label.v-disabled {
+	opacity: 0.5;
+	filter: alpha(opacity=50) ;
+}
+
 .chartstheming .v-label-undef-w {
 	white-space: nowrap;
 }
@@ -11510,8 +11002,6 @@ div.v-layout.v-horizontal.v-widget {
 .chartstheming .v-label-spinner {
 	height: 24px !important;
 	width: 24px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 2px solid rgba(25, 125, 225, 0.2);
 	border-top-color: #197de1;
@@ -11521,18 +11011,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-animation: v-rotate-360 500ms infinite linear;
 	animation: v-rotate-360 500ms infinite linear;
 	pointer-events: none;
-}
-
-.v-ie8 .chartstheming .v-label-spinner, .v-ie9 .chartstheming .v-label-spinner {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .chartstheming .v-label-spinner {
-	min-width: 30px;
-	min-height: 30px;
 }
 
 .chartstheming .v-label-success, .chartstheming .v-label-failure {
@@ -11691,6 +11169,12 @@ div.v-layout.v-horizontal.v-widget {
 	margin-left: 9px;
 }
 
+.chartstheming .v-select-error .v-select-select {
+	border-color: #ed473b !important;
+	background: #fffbfb;
+	color: #6c2621;
+}
+
 .chartstheming .v-popupview {
 	cursor: pointer;
 	color: #197de1;
@@ -11755,8 +11239,6 @@ div.v-layout.v-horizontal.v-widget {
 	margin: 12px 12px;
 	height: 24px !important;
 	width: 24px !important;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 2px solid rgba(25, 125, 225, 0.2);
 	border-top-color: #197de1;
@@ -11766,18 +11248,6 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-animation: v-rotate-360 500ms infinite linear;
 	animation: v-rotate-360 500ms infinite linear;
 	pointer-events: none;
-}
-
-.v-ie8 .chartstheming .v-popupview-loading, .v-ie9 .chartstheming .v-popupview-loading {
-	border: none;
-	border-radius: 4px;
-	background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50% 50%;
-	background-size: 80%;
-}
-
-.v-ie8 .chartstheming .v-popupview-loading {
-	min-width: 30px;
-	min-height: 30px;
 }
 
 .chartstheming .v-richtextarea {
@@ -11808,12 +11278,6 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 	height: auto;
 	overflow: hidden;
-}
-
-.v-ie8 .chartstheming .v-richtextarea, .v-ie9 .chartstheming .v-richtextarea {
-	line-height: 37px;
-	padding-top: 0;
-	padding-bottom: 0;
 }
 
 .chartstheming .v-richtextarea[class*="prompt"] {
@@ -11949,8 +11413,6 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .chartstheming .v-upload .v-button {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -12919,7 +12381,7 @@ div.v-layout.v-horizontal.v-widget {
 	transition: all 300ms;
 }
 
-.chartstheming .valo-menu-responsive[width-range~="0-800px"] .valo-menu-visible .valo-menuitems {
+.chartstheming .valo-menu-responsive[width-range~="0-800px"] .valo-menu-visible .valo-menuitems, .chartstheming .valo-menu-responsive[width-range~="0-800px"] .valo-menu-hover:hover .valo-menuitems {
 	-webkit-transform: translatex(0%);
 	-moz-transform: translatex(0%);
 	-ms-transform: translatex(0%);
